@@ -12,6 +12,8 @@ import {
   Button,
 } from 'react-bootstrap'
 
+import RaisedButton from 'material-ui/RaisedButton'
+
 import MainMenu from '../Menu'
 import Status from './components/Status'
 import SpeciesTable from './components/Species'
@@ -176,6 +178,11 @@ class Table extends React.Component {
       )
     }
 
+    const style = {
+      margin: 4,
+      letterSpacing: '0.05em'
+    }
+
     return (
       <div>
         <nav className="global-nav">
@@ -236,20 +243,20 @@ class Table extends React.Component {
             </h2>
 
             <span>
-              <input
-                type="button"
-                className="btn btn-warning"
-                id="transfer-btn"
-                value="Transfer"
+              <RaisedButton
+                label="Transfer"
+                style={style}
                 onClick={this.handleTransfer}
               />
-              {' '}
-              <input
-                type="button"
-                className="btn btn-danger"
-                id="evolve-btn"
-                value="Evolve"
+              <RaisedButton
+                label="Evolve"
+                style={style}
                 onClick={this.handleEvolve}
+              />
+              <RaisedButton
+                label="Rename"
+                style={style}
+                disabled={true}
               />
             </span>
           </header>

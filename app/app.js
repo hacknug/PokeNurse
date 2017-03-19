@@ -16,8 +16,12 @@ import {
   login
 } from './actions'
 
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import injectTapEventPlugin from 'react-tap-event-plugin'
+injectTapEventPlugin()
+
 // Wraps the connected App component in a <Provider>, to provide the redux store.
-const provider = (App) => () => <Provider store={store}><App /></Provider> // eslint-disable-line
+const provider = (App) => () => <MuiThemeProvider><Provider store={store}><App /></Provider></MuiThemeProvider> // eslint-disable-line
 
 class App extends React.Component {
   static propTypes = {
