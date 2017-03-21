@@ -23,6 +23,7 @@ function zeroPad(str, len = 3) {
 function templateRename(pokemon, name) {
   const totalEnergy = parseInt(Math.floor(100 / pokemon.move_2.energy_cost), 10)
   const energy = getNumberInCircle(totalEnergy)
+  const iv = (pokemon.iv == 100) ? 'XX' : pokemon.iv
   const vi = zeroPad((100 - pokemon.iv).toFixed(0))
   const attack = getNumberInCircle(pokemon.attack)
   const defense = getNumberInCircle(pokemon.defense)
@@ -30,7 +31,9 @@ function templateRename(pokemon, name) {
 
   return name
     .replace('[IV]', pokemon.iv.toFixed(0))
+    .replace('[iv]', iv)
     .replace('[VI]', vi)
+    .replace('[vi]', (100 - pokemon.iv).toFixed(0))
     .replace('[ATT]', attack)
     .replace('[DEF]', defense)
     .replace('[STA]', stamina)

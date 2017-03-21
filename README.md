@@ -39,8 +39,10 @@ This project uses [Electron](http://electron.atom.io/) and [Node.js](https://nod
 
 ## Templated Renaming
 When renaming, it will automatically convert a name like `Bulba-[HP]` into `Bulba-140`.
-* `[IV]` represents the IV percent of that pokemon: 40
-* `[VI]` represents 100 minus the IV: 60
+* `[IV]` represents the IV percent of that pokemon: 40, 100
+* `[iv]` represents the IV percent of that pokemon: 40, XX
+* `[VI]` represents 100 minus the IV: 60, 00
+* `[vi]` represents 100 minus the IV: 60, 0
 * `[ATT]`, `[DEF]`, `[STA]` represent attack, defense, and stamina, they will appear like: ⑨
 * `[FAST]` is the damage of the quick move: 8
 * `[CHARGE]` is the damage of the cinematic move: 40
