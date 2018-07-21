@@ -135,7 +135,7 @@
   },
   "dependencies": {
     "async-file": "^2.0.2",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0",
     "electron-debug": "^1.1.0",
     "electron-localshortcut": "^1.0.0",
     "font-awesome": "^4.7.0",
