@@ -16,7 +16,9 @@
     "package-win": "npm run build && build --win --x64",
     "package-linux": "npm run build && build --linux",
     "package-all": "npm run build && build -mwl --x64 --ia32",
-    "dev": "yarn run hot-server -- --start-hot"
+    "dev": "yarn run hot-server -- --start-hot",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "build": {
     "appId": "com.vinnymac.PokeNurse",
@@ -146,10 +148,12 @@
     "react-redux": "5.0.2",
     "redux": "^3.6.0",
     "redux-thunk": "2.2.0",
-    "source-map-support": "0.4.11"
+    "source-map-support": "0.4.11",
+    "snyk": "^1.176.0"
   },
   "devEngines": {
     "node": ">=6.x",
     "npm": ">=3.x"
-  }
+  },
+  "snyk": true
 }
