@@ -14,6 +14,12 @@
     "async-file": "^2.0.2",
     "electron-localshortcut": "^1.0.0",
     "node-pogo-protos": "2.7.0",
-    "pogobuf": "1.10.0"
-  }
+    "pogobuf": "1.10.0",
+    "snyk": "^1.176.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
