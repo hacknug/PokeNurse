@@ -1,0 +1,47 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - pogobuf > request > extend:
+        patched: '2019-06-12T11:33:35.922Z'
+    - pogobuf > gpsoauthnode > request > extend:
+        patched: '2019-06-12T11:33:35.922Z'
+  'npm:hoek:20180212':
+    - pogobuf > request > hawk > hoek:
+        patched: '2019-06-12T11:33:35.922Z'
+    - pogobuf > request > hawk > boom > hoek:
+        patched: '2019-06-12T11:33:35.922Z'
+    - pogobuf > request > hawk > sntp > hoek:
+        patched: '2019-06-12T11:33:35.922Z'
+    - pogobuf > gpsoauthnode > request > hawk > hoek:
+        patched: '2019-06-12T11:33:35.922Z'
+    - pogobuf > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-12T11:33:35.922Z'
+    - pogobuf > gpsoauthnode > request > hawk > boom > hoek:
+        patched: '2019-06-12T11:33:35.922Z'
+    - pogobuf > gpsoauthnode > request > hawk > sntp > hoek:
+        patched: '2019-06-12T11:33:35.922Z'
+    - pogobuf > gpsoauthnode > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-12T11:33:35.922Z'
+  'npm:qs:20170213':
+    - pogobuf > request > qs:
+        patched: '2019-06-12T11:33:35.922Z'
+    - pogobuf > gpsoauthnode > request > qs:
+        patched: '2019-06-12T11:33:35.922Z'
+  'npm:stringstream:20180511':
+    - pogobuf > request > stringstream:
+        patched: '2019-06-12T11:33:35.922Z'
+    - pogobuf > gpsoauthnode > request > stringstream:
+        patched: '2019-06-12T11:33:35.922Z'
+  'npm:tough-cookie:20170905':
+    - pogobuf > request > tough-cookie:
+        patched: '2019-06-12T11:33:35.922Z'
+    - pogobuf > gpsoauthnode > request > tough-cookie:
+        patched: '2019-06-12T11:33:35.922Z'
+  'npm:tunnel-agent:20170305':
+    - pogobuf > request > tunnel-agent:
+        patched: '2019-06-12T11:33:35.922Z'
+    - pogobuf > gpsoauthnode > request > tunnel-agent:
+        patched: '2019-06-12T11:33:35.922Z'
